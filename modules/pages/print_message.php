@@ -3,13 +3,12 @@
         <?php
         if (isset($_POST['topic']) && isset($_POST['message'])) {
             ?>
-<!--            <h1>--><?php //echo $_POST['topic'] ?><!--</h1>-->
             <h1>This mail will be sent to site owner:</h1>
             <hr>
             <h2>Topic:</h2>
-            <h4 style="background: #aaa"><?php echo $_POST['topic'] ?></h4>
+            <h4 style="background: #aaa; padding-top: 10px; padding-bottom: 10px"><?php echo $_POST['topic'] ?></h4>
             <h2>Message:</h2>
-            <h4 style="background: #aaa"><?php echo $_POST['message'] ?></h4>
+            <h4 style="background: #aaa;  padding-top: 10px; padding-bottom: 10px"><?php echo $_POST['message'] ?></h4>
 
             <?php
         } else {

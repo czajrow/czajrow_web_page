@@ -13,7 +13,8 @@
             <textarea name="message"
                       id="message"
                       class="form-control"
-                      required></textarea>
+                      required
+            style="min-height: 100px"></textarea>
             <br>
             <div style="text-align: right">
                 <button
