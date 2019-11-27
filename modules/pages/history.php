@@ -48,7 +48,6 @@
                 content is released free online.
             </li>
         </ul>
-        </p>
         <p>The first six TED Talks were posted online on June 27, 2006. By September, they had reached more than one
             million views. TED Talks proved so popular that in 2007, TED's website was relaunched around them, giving a
             global audience free access to some of the world's greatest thinkers, leaders and teachers.</p>

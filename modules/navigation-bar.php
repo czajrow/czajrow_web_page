@@ -29,18 +29,19 @@ if ($parts['query']) {
 
             <ul class="nav navbar-nav">
                 <li class="<?php if ($activeTab === "history") echo " active" ?>"><a href="./?page=history">History</a></li>
-                <li class="dropdown <?php if ($activeTab === "quest" || $activeTab === "laurkreolii") echo " active" ?>">
+                <li class="dropdown <?php if ($activeTab === "movie_local" || $activeTab === "movie_link") echo " active" ?>">
                     <a class="dropdown-toggle protectFromHiding"
                        data-toggle="dropdown"
                        style="cursor: pointer"
-                    >Więcej <span class="caret"></span></a>
+                    >Watch TED's clip <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li class="<?php if ($activeTab === "quest") echo " active" ?>"><a
-                                    href="./?page=quest">Quest</a></li>
-                        <li class="<?php if ($activeTab === "laurkreolii") echo " active" ?>"><a
-                                    href="./?page=laurkreolii">Laur Kreolii</a></li>
+                        <li class="<?php if ($activeTab === "movie_local") echo " active" ?>"><a
+                                    href="./?page=movie_local">Locally</a></li>
+                        <li class="<?php if ($activeTab === "movie_link") echo " active" ?>"><a
+                                    href="./?page=movie_link">From link</a></li>
                     </ul>
                 </li>
+                <li class="<?php if ($activeTab === "message") echo " active" ?>"><a href="./?page=message">Send message</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="<?php if ($activeTab === "kontakt") echo " active" ?>"><a href="./?page=more"><span
