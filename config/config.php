@@ -1,18 +1,12 @@
 <?php
 $pagetitle = array(
-    'title' => 'Kreolia',
-);
-
-$header = array(
-    'imagesource' => 'logo.png',
-    'imagealt' => 'logo',
-    'title' => 'Simple Website',
-    'motto' => ''
+    'title' => 'TED',
+    'host' => 'czajrow.000webhostapp.com'
 );
 
 $footer = array(
-    'copyright' => 'Copyright '.date("Y").'.',
-    'company' => 'Fundacja na Rzecz Wspierania Rozwoju Kreatywności oraz Rozwoju Twórczości Dzieci, Młodzieży i Dorosłych'
+    'copyright' => 'Copyright ' . date("Y") . '.',
+    'company' => 'TED - a nonpartisan nonprofit organisation.'
 );
 
 $pages = array(
@@ -23,5 +17,5 @@ $pages = array(
     'table' => array('file' => 'table', 'text' => 'Table')
 );
 
-$error_page = array ('file' => '404', 'text' => 'Page not found!');
+$error_page = array('file' => '404', 'text' => 'Page not found!');
 ?>

@@ -1,5 +1,5 @@
 <!--Navigation Bar starts here...-->
-<?php include "config/config.php" ?>
+<?php include "config/config.php"?>
 
 <?php
 $activeTab = "";
@@ -23,12 +23,12 @@ if ($parts['query']) {
             <a class="navbar-brand"
                href="./?page=home"
                 <?php if ($activeTab === "home") echo ' style="color: white" ' ?>
-            >Kreolia</a>
+            ><?= $pagetitle['title'] ?></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
 
             <ul class="nav navbar-nav">
-                <li class="<?php if ($activeTab === "onas") echo " active" ?>"><a href="./?page=onas">O nas</a></li>
+                <li class="<?php if ($activeTab === "history") echo " active" ?>"><a href="./?page=history">History</a></li>
                 <li class="dropdown <?php if ($activeTab === "quest" || $activeTab === "laurkreolii") echo " active" ?>">
                     <a class="dropdown-toggle protectFromHiding"
                        data-toggle="dropdown"
@@ -43,8 +43,38 @@ if ($parts['query']) {
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="<?php if ($activeTab === "kontakt") echo " active" ?>"><a href="./?page=kontakt"><span
-                                class="glyphicon glyphicon-briefcase"></span> Kontakt</a></li>
+                <li class="<?php if ($activeTab === "kontakt") echo " active" ?>"><a href="./?page=more"><span
+                                class="glyphicon glyphicon-briefcase"></span> More</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle protectFromHiding"
+                       data-toggle="dropdown"
+                       style="cursor: pointer"
+                    >Szukaj <span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="padding: 5px;">
+                        <div>
+                            <form action="https://www.google.com/search"
+                                  class="searchform protectFromHiding"
+                                  method="get"
+                                  name="searchform"
+                                  target="_blank">
+                                <input name="sitesearch"
+                                       type="hidden"
+                                       value="<?= $pagetitle['host'] ?>">
+                                <input autocomplete="on"
+                                       class="form-control protectFromHiding"
+                                       name="q"
+                                       placeholder="Search in <?= $pagetitle['host'] ?>"
+                                       required="required"
+                                       type="text"
+                                       id="searchInput">
+                                <button class="button"
+                                        type="submit"
+                                        style="width: 100%; height: 100%; padding: 0;">Search</button>
+                            </form>
+                        </div>
+                    </ul>
+                </li>
+
             </ul>
         </div>
     </div>

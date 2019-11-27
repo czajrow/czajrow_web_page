@@ -1,6 +1,13 @@
+<?php
+$parts = parse_url($_SERVER['REQUEST_URI']);
+if (!$parts['query']) {
+    header("Location: ./?page=home");
+    die();
+}
+include "config/config.php"
+?>
 <!DOCTYPE html>
-<?php include "config/config.php" ?>
-<html lang="pl">
+<html lang="en">
 <head>
     <!--    <title>Bootstrap Example</title>-->
     <title><?= $pagetitle['title'] ?></title>
@@ -27,10 +34,6 @@
         } else {
             include "./modules/pages/err404.php";
         }
-    } else {
-        echo "nie ma";
-        header("Location: ./?page=home");
-        exit;
     }
 
     include "modules/footer.php";
