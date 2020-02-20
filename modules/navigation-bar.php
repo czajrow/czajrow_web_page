@@ -42,6 +42,7 @@ if ($parts['query']) {
                     </ul>
                 </li>
                 <li class="<?php if ($activeTab === "message") echo " active" ?>"><a href="./?page=message">Send message</a></li>
+                <li class="<?php if ($activeTab === "gallery") echo " active" ?>"><a href="./?page=gallery">Gallery</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="<?php if ($activeTab === "kontakt") echo " active" ?>"><a href="./?page=more"><span
